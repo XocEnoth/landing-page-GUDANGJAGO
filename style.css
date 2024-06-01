@@ -1,0 +1,562 @@
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(121, 121, 204);
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.4s ease;
+}
+
+div.scrollToTop:hover {
+    background-color: #97d193;
+}
+
+.hero-container {
+    background-color: rgba(1, 5, 93, 255);
+    position: fixed;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.hero-container-hilang {
+    opacity: 0;
+}
+
+.container-isi-hero {
+    height: 410px;
+    width: 100%;
+}
+
+.container-hero-img {
+    height: 182px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.container-hero-title {
+    height: 56px;
+    margin-bottom: 30px;
+}
+
+.container-hero-desc {
+    height: 17px;
+    margin-bottom: 30px;
+}
+
+.container-hero-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 52px;
+}
+
+.button-hero {
+    background-color: rgb(121, 121, 204);
+    font-size: 16px;
+    font-weight: 400;
+    height: 52px;
+    border-radius: 3px;
+    border: transparent;
+    color: white;
+    width: 181.75px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button-hero:hover {
+    background-color: white;
+    color: rgb(121, 121, 204);
+}
+
+.container-navbar {
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    box-shadow: 0 4px 10px -3px hsla(0deg, 0%, 75%, 0.5);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+}
+
+.container-nav {
+    width: 1135px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-kiri {
+    width: 39px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-kiri img {
+    width: 39px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.nav-kanan {
+    width: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-kanan p {
+    color: rgb(21, 21, 21);
+    font-weight: 400;
+    font-size: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    line-height: 22.5px;
+}
+
+.nav-kanan p:hover {
+    color: rgb(121, 121, 204);
+}
+
+.container-main {
+    display: flex;
+    justify-content: center;
+}
+
+.main {
+    width: 1135px;
+    margin-top: 170px;
+}
+
+.about-main {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.about-img {
+    width: 546px;
+    height: 418px;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 15px 0px;
+    margin-right: 12px;
+}
+
+.about-text {
+    width: 546px;
+    height: 418px;
+    margin-left: 12px;
+    color: rgb(85, 85, 85);
+}
+
+.about-text p {
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 24px;
+    margin-bottom: 16px;
+}
+
+.container-kutip {
+    margin-bottom: 168px;
+}
+
+.container-service {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.service-kiri {
+    width: 546px;
+    margin-right: 12px;
+}
+
+.service-kanan {
+    width: 546px;
+    margin-left: 12px;
+}
+
+.kolom-service {
+    margin-bottom: 48px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.kolom-text-service h4 {
+    color: rgb(85, 85, 85);
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.kolom-text-service p {
+    color: rgb(149, 149, 149);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 22.5px;
+}
+
+.container-product {
+    display: flex;
+    justify-content: center;
+}
+
+.image-product {
+    width: 546px;
+    margin-right: 12px;
+}
+
+.button-product {
+    width: 546px;
+    margin-left: 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+.button-product button {
+    height: 69px;
+    margin-bottom: 10px;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    font-size: 19px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    text-align: left;
+    padding-left: 25px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.button-product button:hover {
+    color: rgb(121, 121, 204);
+}
+
+.button-product-active {
+    color: rgb(121, 121, 204);
+    box-shadow: 0px 0 25px rgba(0, 0, 0, 0.08);
+}
+
+.container-client {
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+
+.mid-container-client {
+    width: 1135px;
+}
+
+.client-atas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 81px;
+    margin-top: 40px;
+}
+
+.container-client-bawah {
+    display: flex;
+    justify-content: center;
+}
+
+.client-bawah {
+    width: 760px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.container-team-profil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.team {
+    width: 1135px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.profil-team {
+    width: 210px;
+}
+
+.profil-team h4 {
+    color: rgb(85, 85, 85);
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 15px 0 5px;
+}
+
+.profil-team p {
+    color: rgb(121, 121, 204);
+    font-size: 13px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.img-team {
+    display: flex;
+    justify-content: center;
+}
+
+.container-contacts {
+    background-color: whitesmoke;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.container-table-contact {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-contact {
+    width: 1135px;
+    display: flex;
+    justify-content: center;
+}
+
+.table-contact-kiri {
+    height: 288px;
+    width: 356px;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 5px;
+    margin-right: 12px;
+}
+
+.table-contact-kiri-bagi-3 {
+    height: 94px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.location-atas-icon {
+    width: 44px;
+    height: 44px;
+    background-color: rgb(234, 246, 233);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-atas-text {
+    width: 280px;
+}
+
+.location-atas-text h4 {
+    color: rgb(21, 21, 21);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.location-atas-text p {
+    color: rgb(72, 72, 72);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.table-contact-kanan {
+    width: 700px;
+    height: 288px;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-left: 12px;
+}
+
+.input-contact-atas {
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-contact-atas input {
+    width: 310px;
+    border: 1px solid rgb(206, 212, 218);
+    color: rgb(33, 37, 41);
+    font-size: 14px;
+    border-radius: 0;
+    padding: 6px 12px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-contact-atas input:focus {
+    border: 1px solid #007aff;
+}
+
+.input-contact-tengah {
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+
+.input-contact-tengah input {
+    width: 100%;
+    border: 1px solid rgb(206, 212, 218);
+    color: rgb(33, 37, 41);
+    font-size: 14px;
+    border-radius: 0;
+    padding: 6px 12px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.input-contact-tengah input:focus {
+    border: 1px solid #007aff;
+}
+
+.textarea-contact {
+    height: 127px;
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+    margin-bottom: 26px;
+}
+
+.textarea-contact textarea {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgb(206, 212, 218);
+    color: rgb(33, 37, 41);
+    font-size: 14px;
+    border-radius: 0;
+    padding: 6px 12px;
+    outline: none;
+    transition: border 0.3s ease;
+    resize: vertical;
+}
+
+.textarea-contact textarea:focus {
+    border: 1px solid #007aff;
+}
+
+.button-contact {
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-contact button {
+    width: 123px;
+    height: 100%;
+    border: 1px solid black;
+    background-color: rgb(240, 240, 240);
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 0;
+    padding: 1px 6px;
+    cursor: pointer;
+}
+
+.footer-container {
+    height: 493px;
+    width: 100%;
+    background-image: url(img/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-origin: padding-box;
+    background-size: auto;
+}
+
+.footer-shadow {
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-main {
+    width: 570px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    margin-top: 80px;
+}
+
+.footer-img {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-form {
+    height: 30px;
+    width: 550px;
+    background-color: white;
+    border-radius: 50px;
+    padding: 6px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-form input {
+    width: 410px;
+    height: 30px;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 12px;
+}
+
+.footer-form button {
+    width: 80px;
+    height: 30px;
+    padding: 1px 6px;
+    background-color: rgb(240, 240, 240);
+    border: 1px solid rgb(118, 118, 118);
+    border-radius: 2px;
+    cursor: pointer;
+    font-size: 15px;
+    font-stretch: 100%;
+    font-weight: 400;
+    margin-left: 12px;
+}
